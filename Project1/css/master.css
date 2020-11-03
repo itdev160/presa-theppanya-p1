@@ -27,3 +27,45 @@ h5 {
 h6 {
     font-size: 10mm;
 }
+
+h7 {
+    font-size: 12mm;
+    color: red;
+}
+
+#header-image {
+    width: 100%;
+    height: 150mm;
+}
+
+#header-image2 {
+    width: 40mm;
+}
+
+#header-image3 {
+    width: 40mm;
+}
+
+#header-image4 {
+    width: 40mm;
+}
+
+#greeting {
+    font-size: 10mm;
+    color: lawngreen;
+}
+
+#p1-name {
+    text-align: left;
+    color: black;
+}
+
+#p2-name {
+    text-align: left;
+    color: black;
+}
+
+#p3-name {
+    text-align: left;
+    color: black;
+}

@@ -11,16 +11,12 @@ authorEl.textContent = author;
 
 greetingEl.textContent = greeting;
 
-//write date
-var dateEl = getEl('date');
-dateEl.textContent = getTodaysDate();
-
 (function() {
 
     var data = [
         {
             name: 'My Neighbor Totoro',
-            description: 'One of the most endearing and internationally renowned films of all time, My Neighbor Totoro is a deceptively simple tale of two girls, Satsuki and Mei, who move with their  to a new house in the countryside.',
+            description: 'One of the most endearing and internationally renowned films of all time, My Neighbor Totoro is a deceptively simple tale of two girls, Satsuki and Mei, who move with their father to a new house in the countryside.',
             review: '"One of the most beloved of all family films-Roger Ebert."',
             url: 'https://www.amazon.com/Neighbor-Totoro-Bluray-Combo-Blu-ray/dp/B074128LDH/ref=sr_1_2?crid=3IA3KX8WQ6CL8&dchild=1&keywords=my+neighbor+totoro+blu+ray&qid=1603849921&sprefix=my+neigh%2Caps%2C188&sr=8-2',
             ratings: 7264,
@@ -31,7 +27,7 @@ dateEl.textContent = getTodaysDate();
         {
             name: 'Kikis Delivery Service',
             description: 'From the legendary Hayao Miyazaki comes the beloved story of a resourceful young witch who uses her broom to create a delivery service, only to lose her gift of flight in a moment of self-doubt. Rarely has the animators art been so brilliantly rendered as in this delightfully imaginative film-a timeless story of a young girl finding her way in the world.',
-            r: '"A beautifuuly animated, kind-hearted gem."-Leonard Maltin',
+            review: '"A beautifuuly animated, kind-hearted gem."-Leonard Maltin',
             url: 'https://www.amazon.com/Kikis-Delivery-Service-Bluray-Blu-ray/dp/B074128LDG/ref=sr_1_5?crid=2JGVTR80KFZER&dchild=1&keywords=kikis+delivery+service&qid=1603852053&sprefix=kiki%2Caps%2C194&sr=8-5',
             ratings: 3337,
             stars: '5 out of 5',
@@ -41,7 +37,7 @@ dateEl.textContent = getTodaysDate();
         {
             name: 'Spirited Away',
             description: 'When Chihiro is whisked away into a breathtaking world full of spirits and demons, she must use all her wits in order to free herself and her parents from the scoreless Yubaba, in Hayao Miyazaki Academy Award winning masterpiece. Spirited away cemented Hayao Miyazaki reputation as an icon of inspired animation and wondrous, lyrical storytelling.',
-            Review: '"Nothing less than Magicial!"-Joe Morgenstern',
+            review: '"Nothing less than Magicial!"-Joe Morgenstern',
             url: 'https://www.amazon.com/Spirited-Away-Bluray-Combo-Blu-ray/dp/B074121MFR/ref=sr_1_2?crid=HIDRUOIW0P8A&dchild=1&keywords=spirited+away+blu+ray&qid=1603853355&sprefix=spirited+away%2Caps%2C177&sr=8-2',
             ratings: 11185,
             stars: '5 out of 5',
@@ -92,7 +88,7 @@ dateEl.textContent = getTodaysDate();
             nameEl = getEl(selector + '-name'),
             descEl = getEl(selector + '-description'),
             reviewEl = getEl(selector + '-review'),
-            ratingsEl = getEl(selector + '-'),
+            ratingsEl = getEl(selector + '-ratings'),
             starsEl = getEl(selector + '-stars'),
             priceEl = getEl(selector + '-price');
     
@@ -105,14 +101,18 @@ dateEl.textContent = getTodaysDate();
         priceEl.textContent = movie.price;
     };
 
+    //write date
+    var dateEl = getEl('date');
+    dateEl.textContent = getTodaysDate();
+
     //write Movies data 1 by 1
-    var kikis = new Movies(data[0]);
+    var kikis = new Movie(data[0]);
     writeMovieInfo(kikis);
 
-    var spirited = new Movies(data[1]);
+    var spirited = new Movie(data[1]);
     writeMovieInfo(spirited);
 
-    var totoro = new Movies(data[2]);
+    var totoro = new Movie(data[2]);
     writeMovieInfo(totoro);
 
-} );
+} ());

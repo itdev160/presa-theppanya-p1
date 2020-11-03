@@ -10,41 +10,139 @@
 <body>
     <header>
         <h1>Studio Ghibli Movie Enthusiasts</h1>
+        <div id="date"></div>
     </header>
-    <header2>
-        <h2 id="greeting"></h2>
-    <img src="images/ghibli-logo.jpg"alt="ghibli-logo" height="400" width="1575">
-    </header2>
-    <h3 id="author"></h3>
+    <header>
+        <div id="greeting"></div>
+        <div id="author"></div>
+    <img id="header-image" src="images/ghibli-logo.jpg"alt="ghibli">
+    </header>
     <br>
     <br>
     <main>
-        <div class="Movies-container"></div>
-    <header3>
-        <h4 id="p1-name"></h4>
-    </header3>
+        <div class="movie-container">
+            <header>
+                <h4 id="p1-name"></h4>
+            </header>
         <figure>
-            <img src="images/MyNeighbor-Totoro.jpeg" alt="Totoro" height="200" width="200">
-            <figcaption>
-                
-            </figcaption>
+            <img id="header-image2" src="images/MyNeighbor-Totoro.jpeg" alt="Totoro">
         </figure>
-    <header4>
-        <h5>Kiki's Delivery Service</h5>
-    </header4>
+            <section>
+                <p id="p1-description"></p>
+            </section>
+            <footer>
+                Review: <span id="p1-review"></span>
+                <br>
+                Ratings: <span id="p1-ratings"></span>
+                <br>
+                Stars: <span id="p1-stars"></span>
+                <br>
+                Price: <span id="p1-price"></span>
+            </footer>
+        </div>
+        <div class="movie-container">
+            <header>
+                <h5 id="p2-name"></h5>
+            </header>
         <figure>
-            <img src="images/kiki_poster.jpg" alt="Kiki" height="200" width="200">
+            <img id="header-image3" src="images/kiki_poster.jpg" alt="Kiki">
         </figure>
-    <header5>
-        <h6>Spirted Away</h6>
-    </header5>
+            <section>
+                <p id="p2-description"></p>
+            </section>
+            <footer>
+                Review: <span id="p2-review"></span>
+                <br>
+                Ratings: <span id="p2-ratings"></span>
+                <br>
+                Stars: <span id="p2-stars"></span>
+                <br>
+                Price: <span id="p2-price"></span>
+            </footer>
+        </div>
+        <div class="movie-container">
+            <header>
+                <h6 id="p3-name"></h6>
+            </header>
         <figure>
-            <img src="images/spirited away.jpg" alt="spirited away" height="200" width="200">
+            <img id="header-image4" src="images/spirited away.jpg" alt="spirited away">
         </figure>
+            <section>
+                <p id="p3-description"></p>
+            </section>
+            <footer>
+                Review: <span id="p3-review"></span>
+                <br>
+                Ratings: <span id="p3-ratings"></span>
+                <br>
+                Stars: <span id="p3-stars"></span>
+                <br>
+                Price: <span id="p3-price"></span>
+            </footer>
+        </div>
     </main>
-    <footer>
-
-    </footer>
+    <br>
+        <h7>Where to buy and preview</h7>
+        <!-- Simple Table -->
+        <table id="simple-table" border="1" cellspacing="0">
+            <tr>
+                <th>Movie</th>
+                <th>Where to Buy</th>
+            </tr>
+            <tr>
+                <td>My Neighbor Totoro</td>
+                <td>
+                    <a href="https://www.amazon.com/Neighbor-Totoro-Bluray-Combo-Blu-ray/dp/B074128LDH/ref=sr_1_2?crid=3IA3KX8WQ6CL8&dchild=1&keywords=my+neighbor+totoro+blu+ray&qid=1603849921&sprefix=my+neigh%2Caps%2C188&sr=8-2">My Neighbor Totoro link</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Kiki's Delivery Service</td>
+                <td>
+                    <a href="https://www.amazon.com/Kikis-Delivery-Service-Bluray-Blu-ray/dp/B074128LDG/ref=sr_1_5?crid=2JGVTR80KFZER&dchild=1&keywords=kikis+delivery+service&qid=1603852053&sprefix=kiki%2Caps%2C194&sr=8-5">Kiki's Delivery Service link</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Spirited Away</td>
+                <td>
+                    <a href="https://www.amazon.com/Spirited-Away-Bluray-Combo-Blu-ray/dp/B074121MFR/ref=sr_1_2?crid=HIDRUOIW0P8A&dchild=1&keywords=spirited+away+blu+ray&qid=1603853355&sprefix=spirited+away%2Caps%2C177&sr=8-2">Spirited Away link</a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <!-- Complex Table -->
+        <table id="complex-table" border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Movie</th>
+                    <th scope="column">Multiple Formats</th>
+                    <th scope="column">English Dubbed</th>
+                    <th scope="column">****Preview****</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">My Neighbor Totoro</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                    <td><a href="https://www.youtube.com/watch?v=WJC1qciW_3k">My Neighbor Totoro trailer</a></td>
+                </tr>
+                <tr>
+                    <td>Kiki;s Delivery Service</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                    <td><a href="https://www.youtube.com/watch?v=piIdiZ44zzU">Kiki's Delivery Service trailer</a></td>
+                </tr>
+                <tr>
+                    <td>Spirited Away</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                    <td><a href="https://www.youtube.com/watch?v=ByXuk9QqQkk">Spirited Away trailer</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="6">&copy; Presa Theppanya 2020</td>
+            </tfoot>
+        </table>
     <script src="js/scripts.js"></script>
 </body>
 </html>

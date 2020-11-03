@@ -50,7 +50,7 @@ dateEl.textContent = getTodaysDate();
         }
     ];
 
-    function Movies(data) {
+    function Movie(data) {
         this.name = data.name;
         this.description = data.description;
         this.review = data.review;
@@ -81,13 +81,12 @@ dateEl.textContent = getTodaysDate();
 
     //Return DOM element by id
     var getEl = function (id) {
-        return document.getElementById(id);
-        
+        return document.getElementById(id);   
     };
 
     //Writes the extension object data to the
     //appropriate DOM elements utilizing the package selector property.
-    var writeMoviesInfo = function(movie) {
+    var writeMovieInfo = function(movie) {
         //Get reference to DOM elements
         var selector = movie.selector,
             nameEl = getEl(selector + '-name'),
@@ -97,7 +96,7 @@ dateEl.textContent = getTodaysDate();
             starsEl = getEl(selector + '-stars'),
             priceEl = getEl(selector + '-price');
     
-        //Write Movies to the DOM elements
+        //Write Movie to the DOM elements
         nameEl.textContent = movie.name;
         descEl.textContent = movie.description;
         reviewEl.textContent = movie.review;
@@ -108,12 +107,12 @@ dateEl.textContent = getTodaysDate();
 
     //write Movies data 1 by 1
     var kikis = new Movies(data[0]);
-    writeMoviesInfo(kikis);
+    writeMovieInfo(kikis);
 
     var spirited = new Movies(data[1]);
-    writeMoviesInfo(spirited);
+    writeMovieInfo(spirited);
 
     var totoro = new Movies(data[2]);
-    writeMoviesInfo(totoro);
+    writeMovieInfo(totoro);
 
 } );
